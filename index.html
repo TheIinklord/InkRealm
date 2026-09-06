@@ -1,0 +1,187 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Anime, gaming, character and digital art commissions.">
+  <title>InkRealm Art Commissions</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <div class="glow glow-one"></div>
+  <div class="glow glow-two"></div>
+
+  <header class="navbar">
+    <a class="logo" href="#home"><span>INK</span>RONIN</a>
+    <nav>
+      <a href="#commissions">Commissions</a>
+      <a href="#gallery">Gallery</a>
+      <a href="#process">Process</a>
+      <a href="#faq">FAQ</a>
+    </nav>
+    <a class="nav-button" href="#request">Request Art</a>
+  </header>
+
+  <main>
+    <section id="home" class="hero">
+      <div class="hero-copy">
+        <p class="eyebrow">ART • GAMING • ANIME</p>
+        <h1>Bring your<br><span>ideas to life.</span></h1>
+        <p class="hero-text">
+          Original digital artwork made for characters, profile pictures,
+          gaming thumbnails, anime-inspired illustrations, and more.
+        </p>
+        <div class="hero-buttons">
+          <a class="button primary" href="#request">Start a Commission</a>
+          <a class="button secondary" href="#gallery">View My Art</a>
+        </div>
+      </div>
+
+      <div class="hero-art" aria-label="Artwork showcase">
+        <div class="moon"></div>
+        <div class="hero-card card-back">✦</div>
+        <div class="hero-card card-main">
+          <div class="art-placeholder">
+            <span>YOUR<br>ART<br>HERE</span>
+          </div>
+        </div>
+        <div class="floating-tag">✦ CUSTOM ART</div>
+      </div>
+    </section>
+
+    <section class="stats">
+      <div><strong>100%</strong><span>Custom Artwork</span></div>
+      <div><strong>4+</strong><span>Commission Types</span></div>
+      <div><strong>DM</strong><span>Friendly Support</span></div>
+    </section>
+
+    <section id="commissions" class="section">
+      <div class="section-heading">
+        <p class="eyebrow">WHAT I DRAW</p>
+        <h2>Commission <span>options</span></h2>
+        <p>Pick the style that fits your idea. Prices can be changed anytime in this file.</p>
+      </div>
+
+      <div class="commission-grid">
+        <article class="price-card featured">
+          <div class="card-icon">◈</div>
+          <h3>Character Art</h3>
+          <p>Original characters, avatars, anime-inspired characters and fan art.</p>
+          <div class="price">From <b>$25</b></div>
+          <a href="#request" class="text-link">Request this →</a>
+        </article>
+
+        <article class="price-card">
+          <div class="card-icon">◇</div>
+          <h3>Profile Picture</h3>
+          <p>A custom icon for YouTube, Discord, gaming profiles and socials.</p>
+          <div class="price">From <b>$15</b></div>
+          <a href="#request" class="text-link">Request this →</a>
+        </article>
+
+        <article class="price-card">
+          <div class="card-icon">△</div>
+          <h3>Gaming Thumbnail</h3>
+          <p>Bold, eye-catching artwork designed around your gaming video.</p>
+          <div class="price">From <b>$20</b></div>
+          <a href="#request" class="text-link">Request this →</a>
+        </article>
+
+        <article class="price-card">
+          <div class="card-icon">✦</div>
+          <h3>Full Illustration</h3>
+          <p>A larger scene with characters, backgrounds, effects and details.</p>
+          <div class="price">From <b>$40</b></div>
+          <a href="#request" class="text-link">Request this →</a>
+        </article>
+      </div>
+    </section>
+
+    <section id="gallery" class="section gallery-section">
+      <div class="section-heading">
+        <p class="eyebrow">PORTFOLIO</p>
+        <h2>My <span>gallery</span></h2>
+        <p>Replace these cards with your own artwork whenever you're ready.</p>
+      </div>
+
+      <div class="gallery-grid">
+        <div class="gallery-item tall"><div>ARTWORK 01</div></div>
+        <div class="gallery-item"><div>ARTWORK 02</div></div>
+        <div class="gallery-item"><div>ARTWORK 03</div></div>
+        <div class="gallery-item"><div>ARTWORK 04</div></div>
+        <div class="gallery-item tall"><div>ARTWORK 05</div></div>
+        <div class="gallery-item"><div>ARTWORK 06</div></div>
+      </div>
+    </section>
+
+    <section id="process" class="section process-section">
+      <div class="section-heading">
+        <p class="eyebrow">HOW IT WORKS</p>
+        <h2>Simple <span>commission process</span></h2>
+      </div>
+      <div class="steps">
+        <div class="step"><b>01</b><h3>Send your idea</h3><p>Tell me what you want, your style, references and deadline.</p></div>
+        <div class="step"><b>02</b><h3>Sketch & approval</h3><p>I create the initial concept and make agreed changes.</p></div>
+        <div class="step"><b>03</b><h3>Final artwork</h3><p>Your artwork is finished and prepared for digital delivery.</p></div>
+      </div>
+    </section>
+
+    <section id="request" class="section request-section">
+      <div class="request-box">
+        <div class="request-copy">
+          <p class="eyebrow">LET'S CREATE</p>
+          <h2>Request a <span>commission</span></h2>
+          <p>Fill this out and your email app will open with the commission details ready to send.</p>
+          <div class="notice">Tip: Replace <b>your-email@example.com</b> in script.js with your real commission email.</div>
+        </div>
+
+        <form id="commissionForm">
+          <label>Name<input id="name" required placeholder="Your name"></label>
+          <label>Email<input id="email" type="email" required placeholder="you@example.com"></label>
+          <label>Commission type
+            <select id="type" required>
+              <option value="">Choose one</option>
+              <option>Character Art</option>
+              <option>Profile Picture</option>
+              <option>Gaming Thumbnail</option>
+              <option>Full Illustration</option>
+            </select>
+          </label>
+          <label>Tell me about your idea<textarea id="details" required rows="5" placeholder="Describe the character, pose, colors, background, references, etc."></textarea></label>
+          <button class="button primary" type="submit">Create Commission Email</button>
+          <p id="formMessage" class="form-message"></p>
+        </form>
+      </div>
+    </section>
+
+    <section id="faq" class="section faq-section">
+      <div class="section-heading">
+        <p class="eyebrow">QUESTIONS</p>
+        <h2>Frequently asked <span>questions</span></h2>
+      </div>
+      <div class="faq">
+        <details><summary>How long does a commission take?</summary><p>Timing depends on the artwork. Add your normal turnaround time here, such as 3–7 days.</p></details>
+        <details><summary>Can I request changes?</summary><p>Yes. Decide how many revision rounds you offer and add that policy here.</p></details>
+        <details><summary>What files will I receive?</summary><p>Normally a high-resolution PNG or JPG. You can also offer other formats if needed.</p></details>
+        <details><summary>Do you draw fan art?</summary><p>You can customize this answer based on the types of characters and fan art you accept.</p></details>
+      </div>
+    </section>
+  </main>
+
+  <footer>
+    <div>
+      <a class="logo" href="#home"><span>INK</span>RONIN</a>
+      <p>Art • Gaming • Anime</p>
+    </div>
+    <div class="socials">
+      <a href="#" aria-label="YouTube">YouTube</a>
+      <a href="#" aria-label="Instagram">Instagram</a>
+      <a href="#" aria-label="TikTok">TikTok</a>
+      <a href="#" aria-label="Discord">Discord</a>
+    </div>
+    <p class="copyright">© 2026 InkRealm. All rights reserved.</p>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
