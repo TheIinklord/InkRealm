@@ -1,6 +1,6 @@
 // Replace this example with the dedicated email address where you receive commission requests.
 // Do not put passwords, payment keys, or private account information in this file.
-const COMMISSION_EMAIL = "theinklord@gmail.com";
+const COMMISSION_EMAIL = "bw6773714@gmail.com";
 
 const form = document.getElementById("commissionForm");
 const message = document.getElementById("formMessage");
