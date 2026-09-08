@@ -3,185 +3,31 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <meta name="description" content="Anime, gaming, character and digital art commissions.">
-  <title>The InkRealm | Art Commissions</title>
+  <meta name="description" content="InkRealm creates custom character art, profile pictures, gaming art, and illustrations.">
+  <title>InkRealm — Art Commissions</title>
   <link rel="stylesheet" href="style.css">
 </head>
 <body>
-  <div class="glow glow-one"></div>
-  <div class="glow glow-two"></div>
-
-  <header class="navbar">
-    <a class="logo" href="#home"><span>INK</span>RONIN</a>
-    <nav>
-      <a href="#commissions">Commissions</a>
-      <a href="#gallery">Gallery</a>
-      <a href="#process">Process</a>
-      <a href="#faq">FAQ</a>
-    </nav>
+  <a class="skip-link" href="#main-content">Skip to main content</a>
+  <div class="glow glow-one"></div><div class="glow glow-two"></div>
+  <header class="site-header"><div class="navbar">
+    <a class="logo" href="#home" aria-label="InkRealm home"><span>INK</span>REALM</a>
+    <button class="menu-toggle" type="button" aria-expanded="false" aria-controls="site-nav"><span class="sr-only">Open menu</span><span></span><span></span><span></span></button>
+    <nav id="site-nav" aria-label="Main navigation"><a href="#gallery">Gallery</a><a href="#pricing">Pricing</a><a href="#commissions">Commissions</a><a href="#terms">Terms</a><a href="#faq">FAQ</a><a href="#about">About</a><a href="#contact">Contact</a></nav>
     <a class="nav-button" href="#request">Request Art</a>
-  </header>
-
-  <main>
-    <section id="home" class="hero">
-      <div class="hero-copy">
-        <p class="eyebrow">ART • GAMING • ANIME</p>
-        <h1>Bring your<br><span>ideas to life.</span></h1>
-        <p class="hero-text">
-          Original digital artwork made for characters, profile pictures,
-          gaming thumbnails, anime-inspired illustrations, and more.
-        </p>
-        <div class="hero-buttons">
-          <a class="button primary" href="#request">Start a Commission</a>
-          <a class="button secondary" href="#gallery">View My Art</a>
-        </div>
-      </div>
-
-      <div class="hero-art" aria-label="Artwork showcase">
-        <div class="moon"></div>
-        <div class="hero-card card-back">✦</div>
-        <div class="hero-card card-main">
-          <div class="art-placeholder">
-            <span>YOUR<br>ART<br>HERE</span>
-          </div>
-        </div>
-        <div class="floating-tag">✦ CUSTOM ART</div>
-      </div>
-    </section>
-
-    <section class="stats">
-      <div><strong>100%</strong><span>Custom Artwork</span></div>
-      <div><strong>4+</strong><span>Commission Types</span></div>
-      <div><strong>DM</strong><span>Friendly Support</span></div>
-    </section>
-
-    <section id="commissions" class="section">
-      <div class="section-heading">
-        <p class="eyebrow">WHAT I DRAW</p>
-        <h2>Commission <span>options</span></h2>
-        <p>Pick the style that fits your idea. Prices can be changed anytime in this file.</p>
-      </div>
-
-      <div class="commission-grid">
-        <article class="price-card featured">
-          <div class="card-icon">◈</div>
-          <h3>Character Art</h3>
-          <p>Original characters, avatars, anime-inspired characters and fan art.</p>
-          <div class="price">From <b>$25</b></div>
-          <a href="#request" class="text-link">Request this →</a>
-        </article>
-
-        <article class="price-card">
-          <div class="card-icon">◇</div>
-          <h3>Profile Picture</h3>
-          <p>A custom icon for YouTube, Discord, gaming profiles and socials.</p>
-          <div class="price">From <b>$15</b></div>
-          <a href="#request" class="text-link">Request this →</a>
-        </article>
-
-        <article class="price-card">
-          <div class="card-icon">△</div>
-          <h3>Gaming Thumbnail</h3>
-          <p>Bold, eye-catching artwork designed around your gaming video.</p>
-          <div class="price">From <b>$20</b></div>
-          <a href="#request" class="text-link">Request this →</a>
-        </article>
-
-        <article class="price-card">
-          <div class="card-icon">✦</div>
-          <h3>Full Illustration</h3>
-          <p>A larger scene with characters, backgrounds, effects and details.</p>
-          <div class="price">From <b>$40</b></div>
-          <a href="#request" class="text-link">Request this →</a>
-        </article>
-      </div>
-    </section>
-
-    <section id="gallery" class="section gallery-section">
-      <div class="section-heading">
-        <p class="eyebrow">PORTFOLIO</p>
-        <h2>My <span>gallery</span></h2>
-        <p>Replace these cards with your own artwork whenever you're ready.</p>
-      </div>
-
-      <div class="gallery-grid">
-        <div class="gallery-item tall"><div>ARTWORK 01</div></div>
-        <div class="gallery-item"><div>ARTWORK 02</div></div>
-        <div class="gallery-item"><div>ARTWORK 03</div></div>
-        <div class="gallery-item"><div>ARTWORK 04</div></div>
-        <div class="gallery-item tall"><div>ARTWORK 05</div></div>
-        <div class="gallery-item"><div>ARTWORK 06</div></div>
-      </div>
-    </section>
-
-    <section id="process" class="section process-section">
-      <div class="section-heading">
-        <p class="eyebrow">HOW IT WORKS</p>
-        <h2>Simple <span>commission process</span></h2>
-      </div>
-      <div class="steps">
-        <div class="step"><b>01</b><h3>Send your idea</h3><p>Tell me what you want, your style, references and deadline.</p></div>
-        <div class="step"><b>02</b><h3>Sketch & approval</h3><p>I create the initial concept and make agreed changes.</p></div>
-        <div class="step"><b>03</b><h3>Final artwork</h3><p>Your artwork is finished and prepared for digital delivery.</p></div>
-      </div>
-    </section>
-
-    <section id="request" class="section request-section">
-      <div class="request-box">
-        <div class="request-copy">
-          <p class="eyebrow">LET'S CREATE</p>
-          <h2>Request a <span>commission</span></h2>
-          <p>Fill this out and your email app will open with the commission details ready to send.</p>
-          <div class="notice">Tip: Replace <b>your-email@example.com</b> in script.js with your real commission email.</div>
-        </div>
-
-        <form id="commissionForm">
-          <label>Name<input id="name" required placeholder="Your name"></label>
-          <label>Email<input id="email" type="email" required placeholder="you@example.com"></label>
-          <label>Commission type
-            <select id="type" required>
-              <option value="">Choose one</option>
-              <option>Character Art</option>
-              <option>Profile Picture</option>
-              <option>Gaming Thumbnail</option>
-              <option>Full Illustration</option>
-            </select>
-          </label>
-          <label>Tell me about your idea<textarea id="details" required rows="5" placeholder="Describe the character, pose, colors, background, references, etc."></textarea></label>
-          <button class="button primary" type="submit">Create Commission Email</button>
-          <p id="formMessage" class="form-message"></p>
-        </form>
-      </div>
-    </section>
-
-    <section id="faq" class="section faq-section">
-      <div class="section-heading">
-        <p class="eyebrow">QUESTIONS</p>
-        <h2>Frequently asked <span>questions</span></h2>
-      </div>
-      <div class="faq">
-        <details><summary>How long does a commission take?</summary><p>Timing depends on the artwork. Add your normal turnaround time here, such as 3–7 days.</p></details>
-        <details><summary>Can I request changes?</summary><p>Yes. Decide how many revision rounds you offer and add that policy here.</p></details>
-        <details><summary>What files will I receive?</summary><p>Normally a high-resolution PNG or JPG. You can also offer other formats if needed.</p></details>
-        <details><summary>Do you draw fan art?</summary><p>You can customize this answer based on the types of characters and fan art you accept.</p></details>
-      </div>
-    </section>
+  </div></header>
+  <main id="main-content">
+    <section id="home" class="hero section-anchor"><div class="hero-copy"><p class="eyebrow">ART • GAMING • ANIME</p><h1>Bring your<br><span>ideas to life.</span></h1><p class="hero-text">Custom digital artwork for original characters, profile pictures, gaming projects, and anime-inspired illustrations—made with care from first sketch to final file.</p><div class="hero-buttons"><a class="button primary" href="#request">Start a Commission</a><a class="button secondary" href="#gallery">View the Gallery</a></div></div><div class="hero-art" aria-label="InkRealm artwork showcase placeholder"><div class="moon"></div><div class="hero-card card-back">✦</div><div class="hero-card card-main"><div class="art-placeholder"><span>YOUR<br>ART<br>HERE</span></div></div><div class="floating-tag">✦ CUSTOM ART</div></div></section>
+    <section class="stats" aria-label="InkRealm highlights"><div><strong>100%</strong><span>Custom Artwork</span></div><div><strong>4+</strong><span>Commission Types</span></div><div><strong>Clear</strong><span>Friendly Process</span></div></section>
+    <section id="gallery" class="section gallery-section section-anchor"><div class="section-heading"><p class="eyebrow">PORTFOLIO</p><h2>My <span>gallery</span></h2><p>A few places your future custom piece could begin. Replace these preview cards with finished InkRealm artwork when it is ready to share.</p></div><div class="gallery-grid" role="list"><figure class="gallery-item tall" role="listitem"><div>CHARACTER ART</div><figcaption>Original characters</figcaption></figure><figure class="gallery-item" role="listitem"><div>PROFILE ART</div><figcaption>Icons & avatars</figcaption></figure><figure class="gallery-item" role="listitem"><div>GAMING ART</div><figcaption>Thumbnails & banners</figcaption></figure><figure class="gallery-item" role="listitem"><div>SKETCHES</div><figcaption>Concepts & studies</figcaption></figure><figure class="gallery-item tall" role="listitem"><div>ILLUSTRATION</div><figcaption>Scenes & stories</figcaption></figure><figure class="gallery-item" role="listitem"><div>FAN ART</div><figcaption>Favorite worlds</figcaption></figure></div></section>
+    <section id="pricing" class="section section-anchor"><div class="section-heading"><p class="eyebROW">PRICING</p><h2>Simple <span>starting prices</span></h2><p>Every idea is a little different. Final pricing is confirmed before any payment is requested.</p></div><div class="commission-grid"><article class="price-card featured"><div class="card-icon">◈</div><h3>Character Art</h3><p>Original characters, avatars, anime-inspired characters, and fan art.</p><div class="price">Starting at <b>$25</b></div><a href="#request" class="text-link" data-commission="Character Art">Request this →</a></article><article class="price-card"><div class="card-icon">◇</div><h3>Profile Picture</h3><p>A custom icon for social media, gaming profiles, Discord, or YouTube.</p><div class="price">Starting at <b>$15</b></div><a href="#request" class="text-link" data-commission="Profile Picture">Request this →</a></article><article class="price-card"><div class="card-icon">△</div><h3>Gaming Thumbnail</h3><p>Bold artwork designed around your video, stream, or gaming project.</p><div class="price">Starting at <b>$20</b></div><a href="#request" class="text-link" data-commission="Gaming Thumbnail">Request this →</a></article><article class="price-card"><div class="card-icon">✦</div><h3>Full Illustration</h3><p>A larger scene with characters, backgrounds, effects, and extra detail.</p><div class="price">Starting at <b>$40</b></div><a href="#request" class="text-link" data-commission="Full Illustration">Request this →</a></article></div><p class="pricing-note">Extra characters, detailed backgrounds, complex designs, rush timelines, and commercial use may change the quote. Ask for a clear price before you commit.</p></section>
+    <section id="commissions" class="section process-section section-anchor"><div class="section-heading"><p class="eyebrow">HOW IT WORKS</p><h2>A clear <span>commission process</span></h2><p>You will always know what comes next—no surprise payment links, no pressure.</p></div><ol class="steps"><li class="step"><b>01</b><h3>Send your idea</h3><p>Choose a type, share references, and tell me what you are imagining.</p></li><li class="step"><b>02</b><h3>Get your quote</h3><p>I will reply with availability, a final price, timeline, and any questions before accepting the project.</p></li><li class="step"><b>03</b><h3>Approve & pay safely</h3><p>Only after you agree, use the artist’s verified payment method. Never send passwords or card details by email.</p></li><li class="step"><b>04</b><h3>Review & receive</h3><p>See the agreed sketch stage, then receive your finished digital artwork when it is complete.</p></li></ol></section>
+    <section id="request" class="section request-section section-anchor"><div class="request-box"><div class="request-copy"><p class="eyebrow">LET'S CREATE</p><h2>Request a <span>commission</span></h2><p>Share the essentials below. Submitting opens an email draft that you can review before sending.</p><div class="notice"><strong>Your privacy matters.</strong> Please share only the contact details and artwork references needed for this request. Do not include payment information, passwords, home addresses, or other sensitive details.</div></div><form id="commissionForm" novalidate><div class="form-row"><label for="name">Name or username <span aria-hidden="true">*</span></label><input id="name" autocomplete="name" required placeholder="Your name"></div><div class="form-row"><label for="email">Email <span aria-hidden="true">*</span></label><input id="email" type="email" autocomplete="email" required placeholder="you@example.com"></div><div class="form-row"><label for="type">Commission type <span aria-hidden="true">*</span></label><select id="type" required><option value="">Choose one</option><option>Character Art</option><option>Profile Picture</option><option>Gaming Thumbnail</option><option>Full Illustration</option><option>Something else</option></select></div><div class="form-row two-up"><label for="characters">Characters<select id="characters"><option>1 character</option><option>2 characters</option><option>3+ characters</option><option>Not sure yet</option></select></label><label for="deadline">Needed by (optional)<input id="deadline" type="date"></label></div><div class="form-row"><label for="references">Reference link (optional)</label><input id="references" type="url" placeholder="https://…"></div><div class="form-row"><label for="details">Tell me about your idea <span aria-hidden="true">*</span></label><textarea id="details" required rows="5" placeholder="Character, pose, expression, colors, background, style, and anything important."></textarea></div><label class="checkbox-row" for="termsCheck"><input id="termsCheck" type="checkbox" required><span>I have read the <a href="#terms">commission terms</a> and understand that a request is not a confirmed order. <span aria-hidden="true">*</span></span></label><button class="button primary" type="submit">Create My Request Email</button><p id="formMessage" class="form-message" role="status" aria-live="polite"></p></form></div></section>
+    <section id="terms" class="section terms-section section-anchor"><div class="section-heading"><p class="eyebrow">COMMISSION TERMS</p><h2>Kind, clear <span>ground rules</span></h2><p>These starter terms should be customized before accepting paid work.</p></div><div class="terms-grid"><article><h3>Before work starts</h3><p>A request is reviewed first. The artist confirms availability, scope, price, and timeline before a commission is accepted.</p></article><article><h3>Payment</h3><p>Use only the artist’s verified payment method after approval. Never email card numbers, account passwords, or payment screenshots with private information.</p></article><article><h3>Changes</h3><p>Reasonable changes at the agreed sketch stage are welcome. Major changes after approval may require an updated quote.</p></article><article><h3>Timing & delivery</h3><p>Timelines are estimates and depend on complexity and queue position. Finished work is delivered digitally in the agreed format.</p></article><article><h3>Rights & credit</h3><p>Personal-use commissions may be posted with artist credit. Commercial use needs written permission and a separate quote.</p></article><article><h3>Portfolio & refunds</h3><p>Clarify whether finished work may appear in the portfolio and add a specific refund policy before opening commissions.</p></article></div></section>
+    <section id="faq" class="section faq-section section-anchor"><div class="section-heading"><p class="eyebrow">QUESTIONS</p><h2>Frequently asked <span>questions</span></h2></div><div class="faq"><details><summary>How long does a commission take?</summary><p>Timing depends on the piece and current queue. You will receive an estimated timeline when your request is approved—please customize this with your normal turnaround range.</p></details><details><summary>When do I pay?</summary><p>Only after the artist confirms the price and accepts your request. The artist will provide a verified payment method; this website does not collect card details.</p></details><details><summary>Can I ask for changes?</summary><p>Yes—reasonable edits during the agreed sketch stage are included. Bigger direction changes may affect the price or timeline.</p></details><details><summary>What files will I receive?</summary><p>Usually a high-resolution PNG or JPG. Ask before ordering if you need a specific format or size.</p></details><details><summary>Can I use my commission commercially?</summary><p>Commercial use is not automatically included. Let the artist know how you plan to use the artwork so they can provide the right quote and permission.</p></details></div></section>
+    <section id="about" class="section about-section section-anchor"><div><p class="eyebrow">ABOUT INKREALM</p><h2>Art made for <span>your world</span></h2></div><div><p>InkRealm is a creative space for character art, gaming energy, and imaginative digital illustrations. Each commission begins with your idea and grows through a friendly, straightforward collaboration.</p><p>To keep the experience comfortable and safe, communication stays focused on the artwork and payment is discussed only after a project is accepted.</p></div></section>
+    <section id="contact" class="section contact-section section-anchor"><div class="contact-card"><p class="eyebrow">GET IN TOUCH</p><h2>Have a question <span>first?</span></h2><p>Use the commission request form for artwork ideas. For general questions, contact InkRealm through a verified artist profile or add a dedicated commission email below before publishing.</p><p class="contact-placeholder">Commission email: <strong>add-your-email-before-launch</strong></p><a class="button secondary" href="#request">Go to Commission Request</a></div></section>
   </main>
-
-  <footer>
-    <div>
-      <a class="logo" href="#home"><span>INK</span>RONIN</a>
-      <p>Art • Gaming • Anime</p>
-    </div>
-    <div class="socials">
-      <a href="#" aria-label="YouTube">YouTube</a>
-      <a href="#" aria-label="Instagram">Instagram</a>
-      <a href="#" aria-label="TikTok">TikTok</a>
-      <a href="#" aria-label="Discord">Discord</a>
-    </div>
-    <p class="copyright">© 2026 The InkRealm. All rights reserved.</p>
-  </footer>
-
-  <script src="script.js"></script>
+  <footer><div><a class="logo" href="#home"><span>INK</span>REALM</a><p>Art • Gaming • Anime</p></div><div class="socials"><span>Add verified social links before launch</span></div><p class="copyright">© 2026 InkRealm. All rights reserved.</p></footer><script src="script.js"></script>
 </body>
 </html>
