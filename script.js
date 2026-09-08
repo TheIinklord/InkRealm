@@ -17,7 +17,7 @@ document.getElementById("commissionForm").addEventListener("submit", function (e
 
   const subject = encodeURIComponent(`Commission Request — ${type}`);
   const body = encodeURIComponent(
-`Hi InkRealm!
+`Hi The InkRealm!
 
 I'd like to request a commission.
 
