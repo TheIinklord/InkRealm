@@ -22,20 +22,48 @@ document.querySelectorAll("[data-commission]").forEach((link) => link.addEventLi
   document.getElementById("type").value = link.dataset.commission;
 }));
 
+const priceMap = {
+  "Single PFP": "$10 + tax",
+  "Couple PFP": "$10 per character + tax",
+  "Character Art — Head": "$10 + tax",
+  "Character Art — Head & Torso": "$15 + tax",
+  "Character Art — Full Body": "$25 + tax",
+  "Comic Page": "$8 per page + tax",
+  "Short Animation": "$20 + tax",
+  "Long Animation": "Above $20 — custom quote",
+  "Something else": "Custom quote"
+};
+
+const updateSummary = () => {
+  const type = document.getElementById("type").value || "Choose a commission";
+  const plan = document.querySelector('input[name="paymentPlan"]:checked')?.value || "Choose a plan";
+  const privacy = document.querySelector('input[name="publication"]:checked')?.value || "Choose an option";
+  document.getElementById("summaryType").textContent = type;
+  document.getElementById("summaryPrice").textContent = priceMap[type] || "Custom quote";
+  document.getElementById("summaryPlan").textContent = plan;
+  document.getElementById("summaryPrivacy").textContent = privacy.includes("private") ? "Keep private" : privacy.includes("Yes") ? "Can be published" : "Choose an option";
+};
+
+document.getElementById("type").addEventListener("change", updateSummary);
+document.querySelectorAll('input[name="paymentPlan"], input[name="publication"]').forEach((input) => input.addEventListener("change", updateSummary));
+
 form.addEventListener("submit", (event) => {
   event.preventDefault();
   if (!form.checkValidity()) {
-    message.textContent = "Please complete the required fields and confirm the terms.";
+    message.textContent = "Please choose a commission, payment plan, privacy choice, and complete the required fields.";
     form.reportValidity();
     return;
   }
-  if (COMMISSION_EMAIL === "your-email@example.com") {
-    message.textContent = "This form is ready, but the artist still needs to add a commission email in script.js before requests can be sent.";
-    return;
-  }
   const value = (id) => document.getElementById(id).value.trim() || "Not provided";
-  const subject = encodeURIComponent(`InkRealm commission request — ${value("type")}`);
-  const body = encodeURIComponent(`Hello InkRealm!\n\nI'd like to request a commission.\n\nName or username: ${value("name")}\nEmail: ${value("email")}\nCommission type: ${value("type")}\nCharacters: ${value("characters")}\nNeeded by: ${value("deadline")}\nReference link: ${value("references")}\n\nMy idea:\n${value("details")}\n\nThank you!`);
+  const paymentPlan = document.querySelector('input[name="paymentPlan"]:checked')?.value || "Not selected";
+  const paymentMethod = document.querySelector('input[name="paymentMethod"]:checked')?.value || "Not selected";
+  const publication = document.querySelector('input[name="publication"]:checked')?.value || "Not selected";
+  const selectedType = value("type");
+  const price = priceMap[selectedType] || "Custom quote";
+  const subject = encodeURIComponent(`InkRealm commission request — ${selectedType}`);
+  const body = encodeURIComponent(`Hello InkRealm!\n\nI'd like to request a commission.\n\nWHAT I WANT\nCommission type: ${selectedType}\nStarting price: ${price}\nCharacters: ${value("characters")}\nNeeded by: ${value("deadline")}\nReference link: ${value("references")}\n\nMy idea:\n${value("details")}\n\nPAYMENT\nPayment plan: ${paymentPlan}\nPreferred payment method: ${paymentMethod}\nCash App destination: $thegmaerz09\n\nARTWORK PRIVACY\n${publication}\n\nName or username: ${value("name")}\nEmail: ${value("email")}\n\nThank you!`);
   window.location.href = `mailto:${COMMISSION_EMAIL}?subject=${subject}&body=${body}`;
-  message.textContent = "Thanks! Your email app should open with your request ready to review and send.";
+  message.textContent = "Your request is ready to review. Check the email before sending it.";
 });
+
+updateSummary();
